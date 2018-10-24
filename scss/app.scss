@@ -1,0 +1,78 @@
+/* GLOBAL NAV
+----------------------------------------------------- */
+
+/* Nav-top */
+
+.nav-top {
+    height: 2.5em;
+    display: flex;
+}
+
+.nav-bottom {
+    display: flex;
+}
+
+/* Tabs container */
+
+.tabs {
+    display: flex;
+}
+
+/* Label style (default) */
+
+.label {
+}
+
+/* Label style (on-hover) */
+
+.label:hover {
+}
+
+/* Label style (on-click) */
+
+.label:active {
+}
+
+/* Hides radio UI */
+
+.input {
+    position: absolute;
+    opacity: 0;
+}
+
+/* Currently selected content to display */
+
+.input:focus + .label {
+    z-index: 1;
+}
+
+/* Currently selected tab */
+
+.input:checked + .label {
+
+}
+
+/* Currently selected tab content */
+
+.panel {
+
+}
+
+/* Display panel @ this breakpoint */
+
+@media (min-width: 0px) {
+    .panel {
+        -webkit-box-ordinal-group: 100;
+            -ms-flex-order: 99;
+                order: 99;
+    }
+}
+
+/* ??? */
+
+.input:checked + .label + .panel {
+    display: block;
+}
+
+/* END TABS FOR PROGRAMS AND SPECS
+----------------------------------------------------- */
